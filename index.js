@@ -1,14 +1,14 @@
 //IMPORTAMOS APP DEL ARCHIVO APP.JS
-import app from './app.js';
+import app from './src/app.js';
 //IMPORTAMOS LA INSTANCIA DE SEQUELIZE
-import { sequelize } from './database/database.js';
+import { sequelize } from './src/database/database.js';
 //Importar los Modulos creados para visualizar las tablas a la fuerza
-import './models/personaModel.js';
-import './models/juegosModel.js';
-import './models/eventoModel.js';
-import './models/comentariosModel.js';
-import './models/citasModel.js';
-import { PORT } from './config/config.js';
+import './src/models/personaModel.js';
+import './src/models/juegosModel.js';
+import './src/models/eventoModel.js';
+import './src/models/comentariosModel.js';
+import './src/models/citasModel.js';
+import { PORT } from './src/config/config.js';
 //SERVIDOR BASICO QUE ESTA ESCUCHANDO EN EL PUERTO 3000
 async function main() {
     try {
