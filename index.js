@@ -13,7 +13,7 @@ import { PORT } from './src/config/config.js';
 async function main() {
     try {
         //ELIMINA Y CREA TABLAS
-        await sequelize.sync({ force: true });
+        await sequelize.sync({ force: false });
         app.listen(PORT);
         console.log('server is listening on port :)', PORT)
 
